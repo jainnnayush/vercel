@@ -3,7 +3,6 @@ const path = require('path');
 const fs = require('fs');
 const { S3Client, PutObjectCommand } = require('@aws-sdk/client-s3');
 const mime = require('mime-types')
-require('dot-env').config();
 
 const s3Client = new S3Client({
     region: 'ap-south-1',
